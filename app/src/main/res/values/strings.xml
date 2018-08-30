@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SIS</string>
+    <string name="register">Register</string>
+
+    <string-array name="car">
+        <item>Jazz</item>
+        <item>Mobilio</item>
+        <item>Brio</item>
+        <item>CRV</item>
+        <item>BRV</item>
+        <item>HRV</item>
+        <item>Yaris</item>
+        <item>Ertiga</item>
+        <item>Avanza</item>
+        <item>Innova</item>
+    </string-array>
+</resources>

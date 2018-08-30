@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="0dp"
+    android:paddingTop="20dp"
+    android:paddingRight="0dp"
+    android:background="#FFB6C1"
+    tools:context="com.example.angeliv.sis.PerhitunganKredit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="60dp">
+
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="1dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="1dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="OTR"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_otr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:paddingBottom="16dp"
+                android:inputType="number"
+                android:text="" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="TDP (30%)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_tdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="PH Murni"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_phmurni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Provisi (5%)"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_provisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Total Hutang"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_totalhutang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Lama Angsuran"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_lamaangsuran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Bunga"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_bunga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Angsuran"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_angsuran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Pembulatan"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_pembulatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="TOTAL DOWN PAYMENT"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="TDP"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_tdp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Angsuran 1"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_angsuran1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Asuransi"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_asuransi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Admin"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Credit Protection"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_creditprotection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Total"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:paddingBottom="16dp"
+                    android:inputType="number"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <TextView
+        android:text="Perhitungan Kredit"
+        android:textColor="@android:color/black"
+        android:id="@+id/judulApps"
+        android:textSize="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+
